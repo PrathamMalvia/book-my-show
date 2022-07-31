@@ -31,7 +31,7 @@ const EntertainmentCardSlider = () => {
     ];
 
     const settings = {
-        infinity: false,
+        infinite: false,
         autoplay: false,
         slidesToShow: 5,
         slidesToScroll: 5,
@@ -40,7 +40,7 @@ const EntertainmentCardSlider = () => {
             {
                 breakpoints: 1024,
                 settings: {
-                    infinity: false,
+                    infinite: false,
                     slidesToShow: 5,
                     slidesToScroll: 2,
                 }
