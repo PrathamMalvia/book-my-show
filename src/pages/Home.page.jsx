@@ -2,7 +2,6 @@ import React from "react";
 
 // Components
 import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCard.component";
-import Premier from "../components/Premiers/Premier.component";
 import PosterSlider from "../components/PosterSlider/PosterSlider.component";
 
 // config
@@ -37,7 +36,7 @@ const HomePage = () => {
             </div>
         </div>
 
-        <div className="container mx-auto px-4 my-8 w-9/12">
+        <div className="container mx-auto px-4 my-10 w-9/12">
             <PosterSlider
                 images={TempPosters}
                 title="Online Streaming Events"
@@ -56,3 +55,5 @@ const HomePage = () => {
 }
 
 export default HomePage;
+
+
