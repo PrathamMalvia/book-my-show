@@ -15,7 +15,7 @@ const MovieHero = () => {
                     </div>
                     <div className="w-full h-56 bg-opacity-50 absolute bg-black z-10 bottom-0" />
                     <img
-                        src=""
+                        src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/vikrant-rona-et00128225-1657019014.jpg"
                         alt="poster"
                         className="w-full h-full"
                     />
@@ -31,7 +31,7 @@ const MovieHero = () => {
                         <MovieInfo />
                     </div>
                     <img
-                        src=""
+                        src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/vikrant-rona-et00128225-1657019014.jpg"
                         alt="poster"
                         className="w-full h-full"
                     />
