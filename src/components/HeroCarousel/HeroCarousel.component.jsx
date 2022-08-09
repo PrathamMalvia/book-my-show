@@ -50,7 +50,7 @@ const HeroCarousel = () => {
                     {images.map((image) => (
                         <div className="w-full h-56 md:h-80 py-3">
                             <img
-                                src={`https://image.tmdb.org/t/p/original${image.backdrop_path}`}
+                                src={`https://image.tmdb.org/t/p/original/${image.backdrop_path}`}
                                 alt="testing"
                                 className="w-full h-full rounded-md" />
                         </div>
