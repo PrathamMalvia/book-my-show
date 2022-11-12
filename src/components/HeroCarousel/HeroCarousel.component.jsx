@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import HeroSlider from "react-slick";
 import axios from "axios";
+
 // Component
 import { NextArrow, PrevArrow } from "./Arrows.component";
 

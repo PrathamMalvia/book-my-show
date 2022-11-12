@@ -10,7 +10,7 @@ import Cast from '../components/Cast/Cast.component';
 import PosterSlider from "../components/PosterSlider/PosterSlider.component";
 
 // config
-import TempPosters from "../config/TempPosters.config";
+// import TempPosters from "../config/TempPosters.config";
 
 // context
 import { MovieContext } from '../context/movie.context';

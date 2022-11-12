@@ -1,6 +1,7 @@
 import React from 'react';
 import { BiChevronRight, BiSearch, BiMenu } from "react-icons/bi";
 import { RiArrowDownSFill } from "react-icons/ri";
+import { Link, useLocation } from 'react-router-dom';
 
 const NavSm = () => {
     return (
@@ -77,9 +78,16 @@ const NavLg = () => {
 }
 
 const Navbar = () => {
+
+    const location = useLocation();
+
+    const ToPlaysPage = () => {
+        location('/plays');
+    }
+
     return (
         <>
-            <nav className='bg-bms-700 p-3'>
+            <nav className='bg-bms-700 p-2'>
                 <div className='md:hidden'>{ /*Mobile screen*/}
                     <NavSm />
                 </div>
@@ -89,6 +97,42 @@ const Navbar = () => {
                 <div className='hidden lg:flex'>{ /*Large screen*/}
                     <NavLg />
                 </div>
+            </nav>
+
+            <nav className='container mx-auto flex bg-gray-800 p-2'>
+                <div className='text-base hidden lg:flex flex flex-end '>
+
+                    <div className='flex text-gray-300 gap-5 ml-36'>
+                        <div className='hover:text-white cursor-pointer'>Movies</div>
+                        <div className='hover:text-white cursor-pointer'>Stream</div>
+
+                        <Link to={"/events"}>
+                            <h4 className='hover:text-white cursor-pointer'>
+                                Events
+                            </h4>
+                        </Link>
+
+                        <Link to={'/plays'}>
+                            <h4 className='hover:text-white cursor-pointer'>
+                                Plays
+                            </h4>
+                        </Link>
+
+                        <div className='hover:text-white cursor-pointer'>Sports</div>
+                        <div className='hover:text-white cursor-pointer'>Activities</div>
+                        <div className='hover:text-white cursor-pointer mr-8'>Buzz</div>
+                    </div>
+
+
+                    <div className='text-sm align-center flex text-white ml-96 space-x-6'>
+                        <div className='ml-8 cursor-pointer'>ListYourShow</div>
+                        <div className='cursor-pointer'>Corporates</div>
+                        <div className='cursor-pointer'>Offers</div>
+                        <div className='cursor-pointer'>Gift Cards</div>
+                    </div>
+
+                </div>
+
             </nav>
         </>
     )
